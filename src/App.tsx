@@ -2,9 +2,12 @@ import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from './assets/vite.svg';
 import './App.css';
+import instance from './instance';
 
 export default function App() {
   const [count, setCount] = useState(0);
+
+  instance.get(`https://jsonplaceholder.typicode.com/users`).then((res) => console.log(res));
 
   return (
     <>
