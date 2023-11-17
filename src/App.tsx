@@ -1,8 +1,9 @@
 import { useState } from 'react';
+import { Button } from '@mui/material';
 import reactLogo from './assets/react.svg';
 import viteLogo from './assets/vite.svg';
-import './App.css';
 import instance from './instance';
+import './App.css';
 
 export default function App() {
   const [count, setCount] = useState(0);
@@ -12,6 +13,7 @@ export default function App() {
   return (
     <>
       <div>
+        <Button variant="contained">Hello World</Button>
         <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
