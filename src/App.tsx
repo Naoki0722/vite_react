@@ -1,14 +1,19 @@
+import { Button } from '@mui/material';
 import { useState } from 'react';
+import './App.css';
 import reactLogo from './assets/react.svg';
 import viteLogo from './assets/vite.svg';
-import './App.css';
+import instance from './instance';
 
 export default function App() {
   const [count, setCount] = useState(0);
 
+  instance.get(`https://jsonplaceholder.typicode.com/users`).then((res) => console.log(res));
+
   return (
     <>
       <div>
+        <Button variant="contained">Hello World</Button>
         <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>

@@ -4,6 +4,7 @@ module.exports = {
   extends: [
     'airbnb',
     'airbnb-typescript',
+    'airbnb/hooks',
     'plugin:react/jsx-runtime',
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
@@ -17,10 +18,7 @@ module.exports = {
   },
   plugins: ['react-refresh'],
   rules: {
-    'react-refresh/only-export-components': [
-      'warn',
-      { allowConstantExport: true },
-    ],
+    'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
     'import/no-extraneous-dependencies': [
       'error',
       {
