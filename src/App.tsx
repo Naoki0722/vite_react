@@ -1,9 +1,9 @@
-import { useState } from 'react';
 import { Button } from '@mui/material';
+import { useState } from 'react';
+import './App.css';
 import reactLogo from './assets/react.svg';
 import viteLogo from './assets/vite.svg';
 import instance from './instance';
-import './App.css';
 
 export default function App() {
   const [count, setCount] = useState(0);
