@@ -1,0 +1,10 @@
+.github/
+.vscode/
+node_modules/
+.git
+.gitignore
+.dockerignore
+*.DS_Store
+dist/
+playwright-report/
+test-results/
