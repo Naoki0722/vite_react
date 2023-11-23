@@ -6,3 +6,5 @@ on:
 jobs:
   react_test:
     uses: ./.github/workflows/react_build.yml
+  playwright_test:
+    uses: ./.github/workflows/playwright_test.yml
