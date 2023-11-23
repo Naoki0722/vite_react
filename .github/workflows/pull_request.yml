@@ -1,0 +1,8 @@
+name: PullRequest
+
+on:
+  pull_request:
+
+jobs:
+  react_test:
+    uses: ./.github/workflows/react_build.yml
