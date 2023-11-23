@@ -1,0 +1,21 @@
+name: ReactBuildTest
+
+on:
+  workflow_call:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    # defaults:
+    #   run:
+    #     working-directory: frontend
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 21.x
+      - name: Install package
+        run: yarn install --immutable
+      - name: Run build
+        run: yarn build
